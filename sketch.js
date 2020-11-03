@@ -55,9 +55,10 @@ function draw() {
 }
 
 function keyPressed() {
- if (keyCode === s) {
-    // Look at the hints in the document and understand how to make the package body fall only on
-	Matter.Body.setStatic( false);    
+ if (keyDown("down_arrow")) {
+	Matter.Body.setStatic(packageBody, false);  
+	
+	
   }
 }
 
